@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Sidebar from "@/components/layout/Sidebar";
+import MobileNav from "@/components/layout/MobileNav";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,7 +21,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Sidebar />
+        <MobileNav />
+        <main className="md:ml-[280px] min-h-screen">
+          <div className="max-w-4xl mx-auto px-6 py-12 max-md:pt-20">
+            {children}
+          </div>
+        </main>
+      </body>
     </html>
   );
 }
