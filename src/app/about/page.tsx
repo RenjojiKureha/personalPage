@@ -10,25 +10,31 @@ export const metadata: Metadata = {
 };
 
 const workExperience = [
-  {
-    title: "高级前端工程师",
-    subtitle: "某科技公司",
-    period: "2024 - 至今",
-    description: "负责核心产品前端架构设计和开发，推动团队技术升级。",
-  },
-  {
-    title: "前端工程师",
-    subtitle: "某互联网公司",
-    period: "2022 - 2024",
-    description: "参与多个 B 端产品的开发，独立负责项目模块设计和实现。",
-  },
+  // {
+  //   title: "高级前端工程师",
+  //   subtitle: "某科技公司",
+  //   period: "2024 - 至今",
+  //   description: "负责核心产品前端架构设计和开发，推动团队技术升级。",
+  // },
+  // {
+  //   title: "前端工程师",
+  //   subtitle: "某互联网公司",
+  //   period: "2022 - 2024",
+  //   description: "参与多个 B 端产品的开发，独立负责项目模块设计和实现。",
+  // },
+  { 
+    title:"暂无工作经历",
+    subtitle:"",
+    period:"",
+    description:""
+  }
 ];
 
 const education = [
   {
     title: "计算机科学与技术",
-    subtitle: "某大学",
-    period: "2018 - 2022",
+    subtitle: " ",
+    period: "2022 - 2026",
   },
 ];
 

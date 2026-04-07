@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Github, Mail } from "lucide-react";
+import { GitBranch, Mail } from "lucide-react";
 import type { NavItem } from "@/lib/types";
 
 const navItems: NavItem[] = [
@@ -25,11 +25,15 @@ export default function Sidebar() {
     <aside className="fixed left-0 top-0 h-screen w-[280px] bg-bg-secondary border-r border-border flex flex-col p-8 max-md:hidden">
       {/* 头像 */}
       <div className="mb-4">
-        <div className="w-20 h-20 rounded-full bg-gradient-to-br from-accent-blue to-accent-purple" />
+        <img
+          src="/images/avatar.jpg"
+          alt="头像"
+          className="w-20 h-20 rounded-full object-cover border-2 border-accent-blue/40"
+        />
       </div>
 
       {/* 名字与职位 */}
-      <h1 className="text-xl font-bold text-text-heading">你的名字</h1>
+      <h1 className="text-xl font-bold text-text-heading">RenjojiKureha</h1>
       <p className="text-sm text-text-muted mt-1">Full-Stack Developer</p>
 
       {/* 导航 */}
@@ -58,15 +62,15 @@ export default function Sidebar() {
         <div className="font-mono text-xs text-text-muted mb-3">{"// 社交链接"}</div>
         <div className="flex gap-4">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/RenjojiKureha"
             target="_blank"
             rel="noopener noreferrer"
             className="text-text-muted hover:text-accent-blue transition-colors"
           >
-            <Github size={18} />
+            <GitBranch size={18} />
           </a>
           <a
-            href="mailto:your@email.com"
+            href="mailto:2271959422@qq.com"
             className="text-text-muted hover:text-accent-blue transition-colors"
           >
             <Mail size={18} />

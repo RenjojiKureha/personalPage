@@ -4,7 +4,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import rehypePrettyCode from "rehype-pretty-code";
 import { getProject, getProjects } from "@/lib/mdx";
 import { mdxComponents } from "@/components/mdx/MDXComponents";
-import { Github, ExternalLink, ArrowLeft } from "lucide-react";
+import { GitBranch, ExternalLink, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 
 interface Props {
@@ -63,7 +63,7 @@ export default async function ProjectDetailPage({ params }: Props) {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 text-sm text-text-muted hover:text-accent-blue transition-colors"
           >
-            <Github size={14} /> GitHub
+            <GitBranch size={14} /> GitHub
           </a>
         )}
         {project.demo && (

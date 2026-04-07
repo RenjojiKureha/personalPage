@@ -1,0 +1,70 @@
+---
+title: "MindFlow"
+summary: "智能思维导图生成系统，支持音频和文档输入，自动提取结构并生成可视化导图。"
+tags: ["Vue 3", "Vite", "Node.js", "Express", "Prisma", "MongoDB", "Docker"]
+featured: true
+---
+
+## 项目介绍
+
+MindFlow 是一个全栈 Web 应用，目标是把会议录音、讲座音频或各类文档自动转换为结构清晰的思维导图。
+用户上传内容后，系统会先做语音识别或文本提取，再调用 AI 整理为 Markdown 层级结构，最终在前端渲染成交互式导图。
+
+## 技术栈
+
+### 前端
+
+- Vue 3 + Composition API
+- Vite
+- Markmap 导图渲染
+- 自定义 Utility-First CSS
+- Native Fetch API
+
+### 后端
+
+- Node.js + Express
+- TypeScript
+- Prisma + MongoDB
+- Multer 文件上传
+
+### 外部能力
+
+- 腾讯云 ASR 音频转写
+- DeepSeek API 文本摘要与结构化
+- Nodemailer 邮件验证码
+
+## 核心流程
+
+### 音频导入
+
+1. 前端上传音频文件。
+2. 后端调用腾讯云长语音识别接口进行转写。
+3. 将转写结果交给 DeepSeek 整理成 Markdown 层级内容。
+4. 前端用 Markmap 渲染为可视化思维导图。
+
+### 文档导入
+
+1. 支持 PDF、DOCX、DOC、TXT、MD 等格式。
+2. 后端分别使用 pdfjs-dist、mammoth、word-extractor 等工具提取文本。
+3. 提取后的内容进入 AI 结构化处理流程。
+4. 返回 Markdown 给前端实时展示。
+
+## 功能亮点
+
+- 支持音频和文档两种输入方式
+- 自动生成层级结构清晰的思维导图
+- 提供并发控制，避免重任务挤占资源
+- 支持历史记录保存与修改同步
+- 支持导出 PNG 图片
+
+## 工程实践
+
+- 使用 ConcurrencyLimiter 控制重型任务并发数
+- 通过 MongoDB 保存用户导图历史
+- 采用 Docker 与 Nginx 做容器化部署
+- 针对上传大小和环境变量读取做过问题修复
+
+## 项目总结
+
+这个项目把“内容输入、AI 处理、可视化输出”串成了完整闭环。
+它最大的价值在于把原本分散的会议记录、音频材料和文档信息，快速整理成更适合复盘和理解的结构化导图。
