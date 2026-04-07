@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.renjojikureha.com/sitemap.xml",
+    sitemap: "https://www.renjojikureha.top:8092/sitemap.xml",
   };
 }

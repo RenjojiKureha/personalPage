@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getBlogPosts, getProjects } from "@/lib/mdx";
 
-const BASE_URL = "https://www.renjojikureha.com";
+const BASE_URL = "https://www.renjojikureha.top:8092";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getBlogPosts();
