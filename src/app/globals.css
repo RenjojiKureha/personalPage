@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
-@theme inline {
+/* 系统字体栈，不依赖外部CDN */
+@theme {
   --color-bg-primary: #282c34;
   --color-bg-secondary: #21252b;
   --color-border: #3e4451;
@@ -12,8 +13,62 @@
   --color-accent-green: #98c379;
   --color-accent-yellow: #e5c07b;
   --color-accent-red: #e06c75;
-  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
-  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'Courier New', 'Courier', monospace;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* 显式定义自定义颜色工具类 */
+@layer utilities {
+  .bg-bg-primary {
+    background-color: rgb(40 44 52 / <alpha-value>);
+  }
+  .bg-bg-secondary {
+    background-color: rgb(33 37 43 / <alpha-value>);
+  }
+  .bg-accent-blue {
+    background-color: rgb(97 175 239 / <alpha-value>);
+  }
+  .bg-accent-purple {
+    background-color: rgb(198 120 221 / <alpha-value>);
+  }
+  .bg-accent-green {
+    background-color: rgb(152 195 121 / <alpha-value>);
+  }
+  .bg-accent-yellow {
+    background-color: rgb(229 192 123 / <alpha-value>);
+  }
+  .bg-accent-red {
+    background-color: rgb(224 108 117 / <alpha-value>);
+  }
+  
+  .border-border {
+    border-color: #3e4451;
+  }
+  
+  .text-text-primary {
+    color: rgb(171 178 191 / <alpha-value>);
+  }
+  .text-text-heading {
+    color: rgb(229 229 229 / <alpha-value>);
+  }
+  .text-text-muted {
+    color: rgb(92 99 112 / <alpha-value>);
+  }
+  .text-accent-blue {
+    color: rgb(97 175 239 / <alpha-value>);
+  }
+  .text-accent-purple {
+    color: rgb(198 120 221 / <alpha-value>);
+  }
+  .text-accent-green {
+    color: rgb(152 195 121 / <alpha-value>);
+  }
+  .text-accent-yellow {
+    color: rgb(229 192 123 / <alpha-value>);
+  }
+  .text-accent-red {
+    color: rgb(224 108 117 / <alpha-value>);
+  }
 }
 
 @layer base {
