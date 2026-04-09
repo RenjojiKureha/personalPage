@@ -20,54 +20,54 @@
 /* 显式定义自定义颜色工具类 */
 @layer utilities {
   .bg-bg-primary {
-    background-color: rgb(40 44 52 / <alpha-value>);
+    @apply bg-[#282c34];
   }
   .bg-bg-secondary {
-    background-color: rgb(33 37 43 / <alpha-value>);
+    @apply bg-[#21252b];
   }
   .bg-accent-blue {
-    background-color: rgb(97 175 239 / <alpha-value>);
+    @apply bg-[#61afef];
   }
   .bg-accent-purple {
-    background-color: rgb(198 120 221 / <alpha-value>);
+    @apply bg-[#c678dd];
   }
   .bg-accent-green {
-    background-color: rgb(152 195 121 / <alpha-value>);
+    @apply bg-[#98c379];
   }
   .bg-accent-yellow {
-    background-color: rgb(229 192 123 / <alpha-value>);
+    @apply bg-[#e5c07b];
   }
   .bg-accent-red {
-    background-color: rgb(224 108 117 / <alpha-value>);
+    @apply bg-[#e06c75];
   }
   
   .border-border {
-    border-color: #3e4451;
+    @apply border-[#3e4451];
   }
   
   .text-text-primary {
-    color: rgb(171 178 191 / <alpha-value>);
+    @apply text-[#abb2bf];
   }
   .text-text-heading {
-    color: rgb(229 229 229 / <alpha-value>);
+    @apply text-[#e5e5e5];
   }
   .text-text-muted {
-    color: rgb(92 99 112 / <alpha-value>);
+    @apply text-[#5c6370];
   }
   .text-accent-blue {
-    color: rgb(97 175 239 / <alpha-value>);
+    @apply text-[#61afef];
   }
   .text-accent-purple {
-    color: rgb(198 120 221 / <alpha-value>);
+    @apply text-[#c678dd];
   }
   .text-accent-green {
-    color: rgb(152 195 121 / <alpha-value>);
+    @apply text-[#98c379];
   }
   .text-accent-yellow {
-    color: rgb(229 192 123 / <alpha-value>);
+    @apply text-[#e5c07b];
   }
   .text-accent-red {
-    color: rgb(224 108 117 / <alpha-value>);
+    @apply text-[#e06c75];
   }
 }
 
