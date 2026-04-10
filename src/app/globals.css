@@ -20,54 +20,54 @@
 /* 显式定义自定义颜色工具类 */
 @layer utilities {
   .bg-bg-primary {
-    @apply bg-[#282c34];
+    background-color: #282c34;
   }
   .bg-bg-secondary {
-    @apply bg-[#21252b];
+    background-color: #21252b;
   }
   .bg-accent-blue {
-    @apply bg-[#61afef];
+    background-color: #61afef;
   }
   .bg-accent-purple {
-    @apply bg-[#c678dd];
+    background-color: #c678dd;
   }
   .bg-accent-green {
-    @apply bg-[#98c379];
+    background-color: #98c379;
   }
   .bg-accent-yellow {
-    @apply bg-[#e5c07b];
+    background-color: #e5c07b;
   }
   .bg-accent-red {
-    @apply bg-[#e06c75];
+    background-color: #e06c75;
   }
   
   .border-border {
-    @apply border-[#3e4451];
+    border-color: #3e4451;
   }
   
   .text-text-primary {
-    @apply text-[#abb2bf];
+    color: #abb2bf;
   }
   .text-text-heading {
-    @apply text-[#e5e5e5];
+    color: #e5e5e5;
   }
   .text-text-muted {
-    @apply text-[#5c6370];
+    color: #5c6370;
   }
   .text-accent-blue {
-    @apply text-[#61afef];
+    color: #61afef;
   }
   .text-accent-purple {
-    @apply text-[#c678dd];
+    color: #c678dd;
   }
   .text-accent-green {
-    @apply text-[#98c379];
+    color: #98c379;
   }
   .text-accent-yellow {
-    @apply text-[#e5c07b];
+    color: #e5c07b;
   }
   .text-accent-red {
-    @apply text-[#e06c75];
+    color: #e06c75;
   }
 }
 
